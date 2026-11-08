@@ -1,0 +1,6 @@
+{
+  "ci": {
+    "bootstrapping": { "installEnv": {} },
+    "jobs": [{ "name": "admission-e2e", "command": "true" }]
+  }
+}
