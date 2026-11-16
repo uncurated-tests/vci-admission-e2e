@@ -9,9 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: The greeting line is signed
+      - name: The greeting is signed
         run: |
-          if ! grep -qx 'Hello from the maestro\. — maestro' README.md; then
-            echo "::error file=README.md::The greeting line must read exactly: Hello from the maestro. — maestro"
+          if ! grep -qx 'Hello from the maestro\.' README.md; then
+            echo "::error file=README.md::The section needs a line that reads exactly: Hello from the maestro."
+            exit 1
+          fi
+          if ! grep -qx '— maestro' README.md; then
+            echo "::error file=README.md::Sign the greeting on its own line, after it: — maestro"
             exit 1
           fi
