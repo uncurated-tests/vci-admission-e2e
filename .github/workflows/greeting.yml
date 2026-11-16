@@ -1,0 +1,17 @@
+name: greeting
+
+on:
+  pull_request:
+
+jobs:
+  greeting:
+    name: greeting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: The greeting line is signed
+        run: |
+          if ! grep -qx 'Hello from the maestro\. — maestro' README.md; then
+            echo "::error file=README.md::The greeting line must read exactly: Hello from the maestro. — maestro"
+            exit 1
+          fi
