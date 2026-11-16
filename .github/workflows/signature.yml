@@ -1,0 +1,17 @@
+name: signature
+
+on:
+  pull_request:
+
+jobs:
+  signature:
+    name: signature
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: The greeting is verified
+        run: |
+          if ! grep -qx 'Verified by the maestro\.' README.md; then
+            echo "::error file=README.md::Add a line that reads exactly: Verified by the maestro."
+            exit 1
+          fi
