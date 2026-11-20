@@ -1,4 +1,5 @@
 # vci-admission-e2e
+Demo low risk, 2026-11-20.
 Vercel CI admission end-to-end fixture. Safe to ignore.
 
 Hello from the maestro.
