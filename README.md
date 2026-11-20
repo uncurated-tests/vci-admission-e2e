@@ -10,3 +10,5 @@ Verified by the maestro.
 This fixture tests the admission path.
 
 Brief rule: keep it short.
+
+probe: a line for the checks read
