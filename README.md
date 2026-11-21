@@ -7,6 +7,8 @@ Verified by the maestro.
 
 ## Admission
 
+Health check: the greeting and signature checks must pass.
+
 This fixture tests the admission path.
 
 Brief rule: keep it short.
