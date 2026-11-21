@@ -7,6 +7,8 @@ Verified by the maestro.
 
 ## Admission
 
+Ordinary push check.
+
 This fixture tests the admission path.
 
 Brief rule: keep it short.
