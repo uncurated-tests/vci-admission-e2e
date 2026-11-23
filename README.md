@@ -10,3 +10,4 @@ Verified by the maestro.
 This fixture tests the admission path.
 
 Brief rule: keep it short.
+landing probe
